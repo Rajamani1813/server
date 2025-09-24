@@ -17,5 +17,4 @@
     const btn = document.getElementById('greetBtn');
     const nameInput = document.getElementById('name');
  
-
 ```
