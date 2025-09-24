@@ -1,1 +1,6 @@
-hi iam aws
+# new topic
+---sh
+**python code**
+```bash
+print("hello world")
+```
