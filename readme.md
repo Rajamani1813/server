@@ -8,5 +8,5 @@ print("heloo world")
 ---
 **creat by kishore**
 ```bash
-print("AIT king barani bhaava")
+print("AIT king kishore bhaava")
 ```
