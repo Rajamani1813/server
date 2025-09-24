@@ -2,5 +2,11 @@
 ---
 **python code**
 ```bash
-print("hello world")
+print("heloo world")
+```
+## sub code
+---
+**creat by kishore**
+```bash
+print("AIT king barani bhaava")
 ```
