@@ -2,5 +2,46 @@
 ---
 **python code**
 ```bash
-print("hello world")
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Demo</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; padding:32px; background:#f6f8fb; color:#111; }
+    .card { background:#fff; border-radius:8px; padding:18px; box-shadow:0 6px 18px rgba(0,0,0,0.06); max-width:420px; }
+    input { width:100%; padding:8px 10px; margin-top:8px; border-radius:6px; border:1px solid #ddd; }
+    button { margin-top:10px; padding:8px 12px; border-radius:6px; border:0; background:#2563eb; color:#fff; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Say Hello 👋</h2>
+    <label for="name">Your name:</label>
+    <input id="name" placeholder="Type your name" />
+    <button id="greetBtn">Greet me</button>
+
+    <p id="output" style="margin-top:14px; font-weight:600;"></p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('greetBtn');
+    const nameInput = document.getElementById('name');
+    const out = document.getElementById('output');
+
+    btn.addEventListener('click', () => {
+      const name = nameInput.value.trim();
+      // If empty, use "friend"
+      out.textContent = `Hello, ${name || 'friend'}! Nice to meet you.`;
+    });
+
+    // Allow pressing Enter to greet
+    nameInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') btn.click();
+    });
+  </script>
+</body>
+</html>
+
 ```
